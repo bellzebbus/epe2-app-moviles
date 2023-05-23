@@ -4,6 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFA18F"
     tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="313dp"
+        android:layout_height="280dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="#FF7257"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="41dp"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="221dp"
+            android:baselineAlignBottom="false"
+            android:textAlignment="center"
+            app:srcCompat="@mipmap/Logo" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="311dp"
+        android:layout_height="366dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="#FF7257"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="369dp"
+        tools:visibility="visible" >
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="294dp"
+            android:layout_height="379dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:foregroundTint="#FBFBFB"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="iCompleto es una experiencia que te permite comunicarte con gente que comparte tu amor y devocion por el completo, adentrate en el mundo culinario de esta obra maestra y comparte con miles de personas alrededor del globo que piensan en la soberania absoluta del completo por sobre el resto de las demas comidas"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
