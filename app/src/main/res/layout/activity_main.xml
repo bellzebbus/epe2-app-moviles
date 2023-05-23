@@ -36,7 +36,7 @@
 
         <EditText
             android:id="@+id/editTextTextMultiLine"
-            android:layout_width="294dp"
+            android:layout_width="match_parent"
             android:layout_height="379dp"
             android:backgroundTint="#000000"
             android:ems="10"
