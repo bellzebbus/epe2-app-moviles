@@ -32,14 +32,14 @@
         android:visibility="visible"
         app:cardBackgroundColor="#FF7257"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="369dp"
-        tools:visibility="visible" >
+        tools:layout_editor_absoluteY="314dp"
+        tools:visibility="visible">
 
         <EditText
             android:id="@+id/editTextTextMultiLine"
             android:layout_width="match_parent"
-            android:layout_height="379dp"
-            android:backgroundTint="#000000"
+            android:layout_height="393dp"
+            android:backgroundTint="#FF7257"
             android:ems="10"
             android:foregroundTint="#FBFBFB"
             android:gravity="start|top"
@@ -49,5 +49,41 @@
             android:textColor="#FFFFFF" />
 
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_local_phone_green_24"
+        tools:layout_editor_absoluteY="729dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFA18F"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Contactanos!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        tools:layout_editor_absoluteY="692dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:srcCompat="@drawable/baseline_qr_code_24"
+        tools:layout_editor_absoluteY="729dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
