@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 String username = editTextUsername.getText().toString();
                 String password = editTextPassword.getText().toString();
 
-                if (username.equals("administrador") && password.equals("123")) {
+                if (username.equals("123") && password.equals("123")) {
                     Toast.makeText(MainActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, Clases_ACT.class);
                     startActivity(intent);
