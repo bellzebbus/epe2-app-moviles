@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infos_ACT"
+    android:background="#FFA18F">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="40dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="#FF7257"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="292dp"
+            android:layout_height="256dp"
+            app:srcCompat="@drawable/logo_completo" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="312dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="34dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="#FF7257"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="iCompleto es una experiencia que te permite comunicarte con gente que comparte tu amor y devocion por el completo, adentrate en el mundo culinario de esta obra maestra y comparte con miles de personas alrededor del globo que piensan en la soberania absoluta del completo por sobre el resto de las demas comidas"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD"
+            android:textSize="20dp"
+            tools:text="iCompleto es una experiencia que te permite comunicarte con gente que comparte tu amor y devocion por el completo, adentrate en el mundo culinario de esta obra maestra y comparte con miles de personas alrededor del globo que piensan en la soberania absoluta del completo por sobre el resto de las demas comidas" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="205dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="38dp"
+        android:background="#ff7257"
+        android:backgroundTint="#FF7257"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Contactanos!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
