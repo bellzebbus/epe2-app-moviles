@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFA18F"
-    tools:context=".info_ACT">
+    tools:context=".infos_ACT"
+    android:background="#FFA18F">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -46,18 +46,15 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         tools:visibility="visible">
 
-        <EditText
-            android:id="@+id/editTextTextMultiLine"
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="#FF7257"
-            android:ems="10"
-            android:foregroundTint="#FBFBFB"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:text="iCompleto es una experiencia que te permite comunicarte con gente que comparte tu amor y devocion por el completo, adentrate en el mundo culinario de esta obra maestra y comparte con miles de personas alrededor del globo que piensan en la soberania absoluta del completo por sobre el resto de las demas comidas"
-            android:textAlignment="viewStart"
-            android:textColor="#FFFFFF" />
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD"
+            android:textSize="20dp"
+            tools:text="iCompleto es una experiencia que te permite comunicarte con gente que comparte tu amor y devocion por el completo, adentrate en el mundo culinario de esta obra maestra y comparte con miles de personas alrededor del globo que piensan en la soberania absoluta del completo por sobre el resto de las demas comidas" />
     </androidx.cardview.widget.CardView>
 
     <EditText
