@@ -21,5 +21,9 @@ public class home_ACT extends AppCompatActivity {
         Intent intent = new Intent(home_ACT.this, infos_ACT.class);
         startActivity(intent);
     }
+    public void cambiarActInsumos(View view) {
+        Intent intent = new Intent(home_ACT.this, insumos_ACT.class);
+        startActivity(intent);
+    }
 
 }

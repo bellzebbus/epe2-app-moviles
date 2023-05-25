@@ -50,7 +50,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="TextView"
+            android:text="iCompleto es una experiencia que te permite comunicarte con gente que comparte tu amor y devocion por el completo, adentrate en el mundo culinario de esta obra maestra y comparte con miles de personas alrededor del globo que piensan en la soberania absoluta del completo por sobre el resto de las demas comidas"
             android:textAlignment="center"
             android:textColor="#FDFDFD"
             android:textSize="20dp"
@@ -59,8 +59,8 @@
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="210dp"
-        android:layout_height="46dp"
+        android:layout_width="205dp"
+        android:layout_height="63dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="100dp"
