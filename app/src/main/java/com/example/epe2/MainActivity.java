@@ -14,7 +14,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.home);
 
+        VideoView videoView = findViewById(R.id.videoView);
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video;
+        Uri uri = Uri.parse(videoPath);
+        videoView.setVideoURI(uri);
     }
 }
