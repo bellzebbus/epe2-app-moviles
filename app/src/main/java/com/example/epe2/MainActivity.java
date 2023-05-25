@@ -36,17 +36,17 @@ public class MainActivity extends AppCompatActivity {
 
                 if (username.equals("123") && password.equals("123")) {
                     Toast.makeText(MainActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, Clases_ACT.class);
+                    Intent intent = new Intent(MainActivity.this, home_ACT.class);
                     startActivity(intent);
                 } else {
                     if (username.equals("sebastian") && password.equals("123")) {
                         Toast.makeText(MainActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this, Clases_ACT.class);
+                        Intent intent = new Intent(MainActivity.this, home_ACT.class);
                         startActivity(intent);
                     }
                     if (username.equals("martin") && password.equals("123")) {
                         Toast.makeText(MainActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this, Clases_ACT.class);
+                        Intent intent = new Intent(MainActivity.this, home_ACT.class);
                         startActivity(intent);
                     }
                     if (username.equals("") && password.equals("")) {
