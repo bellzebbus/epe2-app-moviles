@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class insumos_ACT extends AppCompatActivity {
 
@@ -18,15 +20,23 @@ public class insumos_ACT extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insumos);
 
+        Button btnCalificar = findViewById(R.id.btnCalificar);
         spinner = findViewById(R.id.spinner);
         textView = findViewById(R.id.textInsumos);
 
-
+        btnCalificar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mostrarAgradecimiento();
+            }
+        });
 
         // Crear un arreglo de elementos
         String[] items = {"Completo italiano",
@@ -55,6 +65,10 @@ public class insumos_ACT extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
                 // Acción a realizar cuando no se selecciona ningún elemento
             }
+
+
+
+
         });
 
         ratingBar = findViewById(R.id.ratingBar);
@@ -62,5 +76,19 @@ public class insumos_ACT extends AppCompatActivity {
         ratingBar.setRating(3.5f);  // Establecer el valor del RatingBar a 3.5
     }
 
+    private void mostrarAgradecimiento() {
+        Toast.makeText(this, "¡Gracias por tu opinión!", Toast.LENGTH_SHORT).show();
+
+    }
+
 
 }
+
+
+
+
+
+
+
+
+
